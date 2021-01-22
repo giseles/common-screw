@@ -1,0 +1,5 @@
+examples/dist/
+node_modules/
+lib/
+package-lock.json
+.idea
