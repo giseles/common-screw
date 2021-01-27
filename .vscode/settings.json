@@ -7,5 +7,5 @@
     "strings": false
   },
   "editor.suggest.snippetsPreventQuickSuggestions": false,
-  "typescript.validate.enable": false
+  "typescript.validate.enable": true
 }
