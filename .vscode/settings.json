@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "eslint.enable": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "typescript.validate.enable": false
+}

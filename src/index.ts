@@ -1,1 +1,1 @@
-export { default as isNullOrUnfined } from './object';
+export { default as Lang } from './lang';
