@@ -1,5 +1,7 @@
 examples/dist/
+examples/node_modules/
 node_modules/
+coverage/
 lib/
 dist/
 package-lock.json
