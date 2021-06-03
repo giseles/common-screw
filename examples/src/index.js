@@ -1,3 +1,17 @@
-import { isNullOrUnfined } from '../../dist'
-console.log(isNullOrUnfined('dd'))
-console.log(isNullOrUnfined('333'))
+// import { isNullOrUnfined } from '../../dist'
+import Screw from '../../src'
+console.log(Screw)
+console.log(Screw.Random.randomBoolean())
+console.log(Screw.Random.randomBoolean())
+console.log(Screw.Random.randomBoolean())
+console.log(Screw.Random.randomBoolean())
+console.log(Screw.Random.randomBoolean())
+console.log(Screw.Lang.isArray(3))
+console.log(Screw.Lang.isArray('dfad'))
+console.log(Screw.Lang.isArray(''))
+console.log(Screw.Lang.isArray([1, 2]))
+console.log(Screw.Lang.isArray([1, 2]))
+console.log(Screw.Lang.isArray([1, 2]))
+console.log(Screw.Date.addDaysToDate('2020-10-15', -10))
+console.log(Screw.Date.addDaysToDate('2020-10-15', 10))
+console.log(Screw.Date.addDaysToDate(null, 10))

@@ -6,5 +6,5 @@ src/
 .npmignore
 .idea
 .vscode
-.jest.config.json
-.tsconfig.json
+jest.config.json
+tsconfig.json
