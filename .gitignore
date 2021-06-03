@@ -1,5 +1,6 @@
 examples/dist/
 examples/node_modules/
+examples/yarn.lock
 node_modules/
 coverage/
 lib/

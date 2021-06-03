@@ -1,17 +1,5 @@
-// import { isNullOrUnfined } from '../../dist'
-import Screw from '../../src'
-console.log(Screw)
-console.log(Screw.Random.randomBoolean())
-console.log(Screw.Random.randomBoolean())
-console.log(Screw.Random.randomBoolean())
-console.log(Screw.Random.randomBoolean())
-console.log(Screw.Random.randomBoolean())
-console.log(Screw.Lang.isArray(3))
-console.log(Screw.Lang.isArray('dfad'))
-console.log(Screw.Lang.isArray(''))
-console.log(Screw.Lang.isArray([1, 2]))
-console.log(Screw.Lang.isArray([1, 2]))
-console.log(Screw.Lang.isArray([1, 2]))
-console.log(Screw.Date.addDaysToDate('2020-10-15', -10))
-console.log(Screw.Date.addDaysToDate('2020-10-15', 10))
-console.log(Screw.Date.addDaysToDate(null, 10))
+import Screw from '../../dist'
+// import Screw from '../../src'
+console.log(Screw.Date.timestampToDateNoTime())
+console.log(Screw.Date.timestampToDateNoTime(1622711246300))
+console.log(Screw.Date.timestampToDateNoTime(1624711246300))
