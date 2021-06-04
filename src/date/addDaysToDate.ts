@@ -3,7 +3,7 @@
  * @function 加前后天数
  * @param {Any} date 日期
  * @param {Number} n    天数
- * @return {Date} 日期
+ * @returns {Date} 日期
  * @example
  *  addDaysToDate(null, 0)            ---- 2020-10-25
  *  addDaysToDate('2020-10-15', 10)   ---- 2020-10-25

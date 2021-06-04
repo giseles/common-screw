@@ -3,7 +3,7 @@ import addZero from '../_utils/addZero'
 /**
  * @function 时间戳转日期
  * @param {Number} timestamp 时间戳
- * @return {Date} 日期+时间
+ * @returns {Date} 日期+时间
  * @example
  *  timestampToDate()              ---- 2021-06-03 17:06:29
  *  timestampToDate(1622711246300) ---- 2021-06-03 17:07:26

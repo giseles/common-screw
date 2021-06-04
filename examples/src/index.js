@@ -1,5 +1,12 @@
-import Screw from '../../dist'
+import {
+    CSDate, addDaysToDate, timestampToDateNoTime, timestampToDate
+} from '../../dist'
+// import {
+//     addDaysToDate, timestampToDateNoTime
+// } from '../../dist/date'
 // import Screw from '../../src'
-console.log(Screw.Date.timestampToDateNoTime())
-console.log(Screw.Date.timestampToDateNoTime(1622711246300))
-console.log(Screw.Date.timestampToDateNoTime(1624711246300))
+console.log(CSDate)
+console.log(CSDate.timestampToDateNoTime())
+console.log(timestampToDate(1622711246300))
+console.log(timestampToDateNoTime(1624711246300))
+console.log(addDaysToDate('2020-10-15', 10))
