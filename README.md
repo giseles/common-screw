@@ -11,7 +11,7 @@
 
 ### 模块加载
 ```js
-import { CSDate, CSRandom } from 'common-screw'
+import { CSDate, CSDown, CSFormat, CSLang, CSRandom } from 'common-screw'
 
  CSDate.addDaysToDate('2020-10-15', -10)
  CSRandom.randomBoolean()
