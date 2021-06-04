@@ -1,8 +1,8 @@
 export { CSDate } from './date';
-export { default as CSDown } from './down';
-export { default as CSFormat } from './format';
-export { default as CSLang } from './lang';
-export { default as CSRandom } from './random';
+export { CSDown } from './down';
+export { CSFormat } from './format';
+export { CSLang } from './lang';
+export { CSRandom } from './random';
 
 //日期
 export { addDaysToDate } from './date/addDaysToDate';
@@ -24,3 +24,6 @@ export { toString } from './format/toString';
 export { isArray } from './lang/isArray';
 export { isBoolean } from './lang/isBoolean';
 export { isNil } from './lang/isNil';
+
+// 随机
+export { randomBoolean } from './random/randomBoolean';

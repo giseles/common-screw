@@ -4,6 +4,10 @@
  * @param n 数字
  * @param fixed 位数 默认2位
  * @example 
- * toFixed(2) ----  2.00
+ * toFixed(11.3632)         ----  11.36
+ * toFixed(11.363222,4)     ----  11.3632
+ * toFixed('3322.54646')    ----  3322.54
+ * toFixed(0)               ----  0
+ * toFixed(2)               ----  2
  */
 export const toFixed = (n: any, fixed: number = 2) => ~~(Math.pow(10, fixed) * n) / Math.pow(10, fixed);

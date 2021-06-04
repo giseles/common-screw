@@ -7,10 +7,10 @@ import { toString } from './toString';
  * @name 格式类方法
  * @example	
  * toFixed      //保留小数点（非四舍五入）
- * toJson       //变为json格式
- * toString     //转为字符串
+ * toJson       //将枚举转为Json格式
+ * toString     //字符串转换
  */
-export default {
+export const CSFormat = {
     toFixed,
     toJson,
     toString

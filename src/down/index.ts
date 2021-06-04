@@ -7,7 +7,7 @@ import { downUrl } from './downUrl';
  * downFile    //下载csv文件
  * downUrl     //通过url下载文件
  */
-export default {
+export const CSDown = {
     downFile,
     downUrl
 };

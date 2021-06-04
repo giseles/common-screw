@@ -10,7 +10,7 @@ import { isNil } from './isNil';
  * isBoolean     //判断类型-布尔值
  * isNil         //判断类型-是否为空
  */
-export default {
+export const CSLang = {
     isArray,
     isBoolean,
     isNil
