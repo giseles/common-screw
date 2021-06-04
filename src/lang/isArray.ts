@@ -1,7 +1,5 @@
 import isType from '../_utils/isType'
 
-/** 判断类型-数组 */
-
 /**
  * @name 判断类型-数组
  * @example

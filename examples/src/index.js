@@ -14,7 +14,7 @@ import {
 } from '../../dist'
 /**日期类demo */
 
-// console.log(addDaysToDate(null, 0))
+console.log(addDaysToDate(null, 0))
 // console.log(addDaysToDate('2020-10-15', 10))
 // console.log(addDaysToDate('2020-10-15', 0))
 

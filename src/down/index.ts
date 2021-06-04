@@ -1,13 +1,13 @@
-import { downFile } from './downFile';
+import { downToCsv } from './downToCsv';
 import { downUrl } from './downUrl';
 
 /**
  * @name 下载类方法
  * @example	
- * downFile    //下载csv文件
+ * downToCsv    //下载csv文件
  * downUrl     //通过url下载文件
  */
 export const CSDown = {
-    downFile,
+    downToCsv,
     downUrl
 };

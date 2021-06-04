@@ -14,7 +14,7 @@ const downDate = (timestamp = +new Date()) => {
     const h = time.getHours();
     const m = time.getMinutes();
     const s = time.getSeconds();
-    return y + '-' + addZero(M) + '-' + addZero(d) + ' ' + addZero(h) + ':' + addZero(m);
+    return y + '-' + addZero(M) + '-' + addZero(d) + ' ' + addZero(h) + '_' + addZero(m);
 }
 
 export default downDate

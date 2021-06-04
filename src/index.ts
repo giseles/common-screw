@@ -11,7 +11,7 @@ export { timestampToDate } from './date/timestampToDate';
 export { timestampToDateNoTime } from './date/timestampToDateNoTime';
 
 //下载
-export { downFile } from './down/downFile';
+export { downToCsv } from './down/downToCsv';
 export { downUrl } from './down/downUrl';
 
 
