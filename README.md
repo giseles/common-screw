@@ -29,3 +29,8 @@ import { randomBoolean, isArray, addDaysToDate } from 'common-screw'
  addDaysToDate('2020-10-15', -10)
  
 ```
+
+## :package:  API文档
+
+### Date  
+#### &emsp;&emsp;[addDaysToDate][addDaysToDate]&emsp;&emsp;日期加前后天数 
