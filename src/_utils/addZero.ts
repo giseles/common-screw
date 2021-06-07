@@ -6,7 +6,10 @@
  * addZero(9) ----  09
  */
 const addZero = (m: Number) => {
-    return m < 10 ? '0' + m : m;
+    if (m < 10 && m > 0) {
+        return '0' + m
+    }
+    return m
 }
 
 export default addZero

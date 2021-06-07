@@ -4,7 +4,8 @@ import addZero from './addZero'
 /**
  * @name 下载文件日期
  * @param timestamp 时间戳
- * @returns 日期 2021-06-03 17:07
+ * @example 
+ * downDate() ----  2021-06-03 17:07
  */
 const downDate = (timestamp = +new Date()) => {
     const time = new Date(timestamp);
