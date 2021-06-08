@@ -9,13 +9,9 @@ import addZero from '../_utils/addZero'
 *  timestampToDateNoTime(1622711246300)   ---- 2021-06-03
 */
 export const timestampToDateNoTime = (timestamp = +new Date()) => {
-    if (timestamp) {
-        const time = new Date(timestamp);
-        const y = time.getFullYear();
-        const M = time.getMonth() + 1;
-        const d = time.getDate();
-        return y + '-' + addZero(M) + '-' + addZero(d);
-    } else {
-        return '';
-    }
+    const time = new Date(timestamp);
+    const y = time.getFullYear();
+    const M = time.getMonth() + 1;
+    const d = time.getDate();
+    return y + '-' + addZero(M) + '-' + addZero(d);
 }

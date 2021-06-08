@@ -3,8 +3,10 @@
  * @param {Any} startDate  日期1
  * @param {Any} endDate    日期2
  * @example
+ *  diffTime('2020-10-15', '2020-10-26 12:00')           ---- 11天12小时
+ *  diffTime('2020-10-26', '2020-10-29 12:22:33', true)  ---- [3, 12, 22]
  */
-export const diffTime = (startDate: any, endDate: any) => {
+export const diffTime = (startDate: any, endDate: any, typeArray = false) => {
     const diff = Date.parse(endDate.replace(/-/g, '/')) - Date.parse(startDate.replace(/-/g, '/'));
 
     // 计算出相差天数
@@ -16,7 +18,7 @@ export const diffTime = (startDate: any, endDate: any) => {
     // 计算相差分钟数
     const diff2 = diff1 % (3600 * 1000); // 计算小时数后剩余的毫秒数
     const minutes = Math.floor(diff2 / (60 * 1000));
-
+    if (typeArray) return [days, hours, minutes]
     let returnStr = '';
     if (minutes > 0) {
         returnStr = minutes + '分' + returnStr;
@@ -28,4 +30,5 @@ export const diffTime = (startDate: any, endDate: any) => {
         returnStr = days + '天' + returnStr;
     }
     return returnStr;
+
 };

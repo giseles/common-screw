@@ -9,16 +9,12 @@ import addZero from '../_utils/addZero'
  *  timestampToDate(1622711246300) ---- 2021-06-03 17:07:26
  */
 export const timestampToDate = (timestamp = +new Date()) => {
-    if (timestamp) {
-        const time = new Date(timestamp);
-        const y = time.getFullYear();
-        const M = time.getMonth() + 1;
-        const d = time.getDate();
-        const h = time.getHours();
-        const m = time.getMinutes();
-        const s = time.getSeconds();
-        return y + '-' + addZero(M) + '-' + addZero(d) + ' ' + addZero(h) + ':' + addZero(m) + ':' + addZero(s);
-    } else {
-        return '';
-    }
+    const time = new Date(timestamp);
+    const y = time.getFullYear();
+    const M = time.getMonth() + 1;
+    const d = time.getDate();
+    const h = time.getHours();
+    const m = time.getMinutes();
+    const s = time.getSeconds();
+    return y + '-' + addZero(M) + '-' + addZero(d) + ' ' + addZero(h) + ':' + addZero(m) + ':' + addZero(s);
 }

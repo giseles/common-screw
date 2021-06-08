@@ -1,17 +1,17 @@
 import { isArray } from '../isArray';
 
-test('isNullOrUnfined 300', () => {
+test('判断类型-数组', () => {
     expect(isArray([1, 2, 3])).toBe(true)
 })
 
-test('isNullOrUnfined "" ', () => {
+test('判断类型-数组 ', () => {
     expect(isArray('')).toBe(false)
 })
 
-test('isNullOrUnfined null', () => {
+test('判断类型-数组', () => {
     expect(isArray(null)).toBe(false)
 })
 
-test('isNullOrUnfined {}', () => {
+test('判断类型-数组', () => {
     expect(isArray({})).toBe(false)
 })

@@ -11,7 +11,7 @@
 
 ### 模块加载
 ```js
-import { CSDate, CSDown, CSFormat, CSLang, CSRandom } from 'common-screw'
+import { CSBrowser, CSDate, CSDown, CSFormat, CSFunction, CSLang, CSRandom ,CSRegexp } from 'common-screw'
 
  CSDate.addDaysToDate('2020-10-15', -10)
  CSRandom.randomBoolean()
@@ -32,5 +32,11 @@ import { randomBoolean, isArray, addDaysToDate } from 'common-screw'
 
 ## :package:  API文档
 
+### 浏览器
+
+#### &emsp;&emsp;[copyToClipboard](https://github.com/giseles/common-screw/blob/main/src/date/addDaysToDate.ts) &emsp;&emsp;日期加前后天数
+
 ### Date  
+
 #### &emsp;&emsp;[addDaysToDate][addDaysToDate]&emsp;&emsp;日期加前后天数 
+

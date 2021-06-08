@@ -2,7 +2,7 @@ import addZero from '../addZero';
 import { ToExpect } from '../../_testComponent/ToExpect';
 
 test('addZero 0', () => {
-    expect(addZero(0)).toBe(0)
+    expect(addZero(0)).toBe('00')
 })
 
 

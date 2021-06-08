@@ -1,13 +1,13 @@
 /**
- * @name   判断是否为密码 [min,max]字母和数字组合
+ * @name   判断是否为密码 
  * @param  {String} str  密码
- * @param  {Number} min  最小位数
- * @param  {Number} max  最大位数
+ * @param  {Number} min  最小位数 6
+ * @param  {Number} max  最大位数 20
+ * @description [min,max] 字母，数字，字符中的两种以上
  * @example
- * isPassword(1222qq.com)   ---- true
- * isPassword(1)            ---- false
+ * isPassword('xjn4456')       ---- true
+ * isPassword('x33j', 1, 5)    ---- true
  */
-export const isPassword = (str: any, min = 6, max = 12) => {
-    return /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,12}$/.test(str);
+export const isPassword = (str: any, min = 6, max = 20) => {
+    return new RegExp("^(?![0-9]+$)(?![a-z]+$)(?![A-Z]+$)(?!([^(0-9a-zA-Z)])+$).{" + min + "," + max + "}$").test(str);
 }
-// '^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,26}$', // 6-26字母和数字组合

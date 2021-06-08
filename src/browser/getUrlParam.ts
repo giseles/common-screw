@@ -4,7 +4,8 @@ import { LooseObject } from "../_interface/LooseObject";
  * @name 获取url参数
  * @param {String} url url地址 
  * @example
-
+ *  getUrlParam('www.baidu.com?a=3')   ---- { "a": "3" }
+ *  getUrlParam('www.baidu.com')       ---- {}
  */
 export const getUrlParam = (url: String) => {
     let obj: LooseObject = {}

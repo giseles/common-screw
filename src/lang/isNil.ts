@@ -1,10 +1,9 @@
 const isNotEmptyObject = (obj: any): boolean => {
-    if (typeof obj === "object") {
-        if (Object.keys(obj).length > 0) {
-            return false;
-        }
+    if (typeof obj === "object" && Object.keys(obj).length === 0) {
+        return true
     }
-    return true;
+    return false
+
 }
 
 /**

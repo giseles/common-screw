@@ -6,7 +6,7 @@
  * addZero(9) ----  09
  */
 const addZero = (m: Number) => {
-    if (m < 10 && m > 0) {
+    if (m < 10 && m >= 0) {
         return '0' + m
     }
     return m
