@@ -80,7 +80,7 @@ import { randomBoolean, isArray, addDaysToDate } from 'common-screw'
 
 ### CSFunction  
 
-#### &emsp;&emsp;[debounce](https://github.com/giseles/common-screw/blob/main/src/function/debounce.ts) &emsp;&emsp;&emsp;随机生成Boolean 
+#### &emsp;&emsp;[debounce](https://github.com/giseles/common-screw/blob/main/src/function/debounce.ts) &emsp;&emsp;&emsp;防抖 
 
 #### &emsp;&emsp;[deepClone](https://github.com/giseles/common-screw/blob/main/src/function/deepClone.ts) &emsp;&emsp;&emsp;深拷贝  
 
