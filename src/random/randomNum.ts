@@ -1,9 +1,10 @@
 /**
  * 
- * @desc 生成指定范围[min, max]的随机数
- * @param  {Number} min 
- * @param  {Number} max 
- * @return {Number} 
+ * @name 生成指定范围[min, max]的随机数
+ * @param  {Number} 最小值 
+ * @param  {Number} 最大值 
+ * @example
+ * randomNum(1,10)
  */
 export const randomNum = (min: any, max: any) => {
     min = Math.ceil(min)

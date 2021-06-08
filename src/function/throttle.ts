@@ -1,3 +1,17 @@
+/**
+ * @name 节流
+ * @param fn 方法
+ * @param wait 时间
+ * @example
+ * 类似控制阀门一样定期开放的函数，也就是让函数执行一次后
+ * 在某个时间段内暂时失效，过了这段时间后再重新激活
+ * window.addEventListener(
+ *  'resize',
+ *  throttle(() => {
+ *    console.log(window.innerWidth);
+ *   }, 250)
+ * ); 
+ */
 export const throttle = (fn: any, wait: any) => {
     let inThrottle: any, lastFn: any, lastTime: any;
     return function () {
@@ -19,11 +33,3 @@ export const throttle = (fn: any, wait: any) => {
         }
     };
 };
-
-//   window.addEventListener(
-//     'resize',
-//     throttle(function(evt) {
-//       console.log(window.innerWidth);
-//       console.log(window.innerHeight);
-//     }, 250)
-//   ); // Will log the window dimensions at most every 250ms

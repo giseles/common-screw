@@ -1,6 +1,6 @@
 
 /**
-* @function 日期转时间戳  
+* @name 日期转时间戳  
 * @param {Date} date 日期
 * @returns {Number} 时间戳
 * @example

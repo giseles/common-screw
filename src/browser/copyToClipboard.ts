@@ -1,3 +1,9 @@
+/**
+ * @name 复制文本到粘贴板
+ * @param {String} str 内容 
+ * @example
+ * copyToClipboard('被复制文本')
+ */
 export const copyToClipboard = (str: any) => {
     const el = document.createElement('textarea');
     el.value = str;
@@ -22,4 +28,3 @@ export const copyToClipboard = (str: any) => {
         document.getSelection().addRange(selected);
     }
 };
-//   copyToClipboard('Lorem ipsum'); // 'Lorem ipsum' copied to clipboard.

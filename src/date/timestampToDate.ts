@@ -1,7 +1,7 @@
 import addZero from '../_utils/addZero'
 
 /**
- * @function 时间戳转日期
+ * @name 时间戳转日期
  * @param {Number} timestamp 时间戳
  * @returns {Date} 日期+时间
  * @example

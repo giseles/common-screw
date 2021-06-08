@@ -1,6 +1,5 @@
-
 /**
- * @function 加前后天数
+ * @name 加前后天数
  * @param {Any} date 日期
  * @param {Number} n    天数
  * @returns {Date} 日期

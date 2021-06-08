@@ -1,7 +1,7 @@
 
 import { LooseObject } from '../_interface/LooseObject'
 /**
- * @name 将枚举转为Json格式
+ * @name 将数组 => 对象格式
  * @param {object} data 枚举 
  * @example 
  * toEnum([{id: "1",value: aa}])   ----  {1:aa}

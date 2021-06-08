@@ -1,6 +1,6 @@
 
 /**
- * @name 将枚举转为Json格式
+ * @name 将对象 => 数组格式
  * @param {object} data 枚举 
  * @example 
  * toEnumArray({a:1})   ----  [{value: "a",text: 1}]

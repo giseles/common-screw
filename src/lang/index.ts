@@ -4,7 +4,7 @@ import { isNil } from './isNil';
 
 
 /**
- * @name 语法类方法
+ * @name 语法 类方法
  * @example	
  * isArray       //判断类型-数组
  * isBoolean     //判断类型-布尔值
