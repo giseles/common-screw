@@ -6,7 +6,7 @@ import { throttle } from './throttle';
 /**
  * @name 常用函数 类方法
  * @example	
- * debounce     //随机生成Boolean
+ * debounce     //防抖
  * deepClone    //深拷贝
  * throttle     //节流
  */
