@@ -1,19 +1,20 @@
 /**
  * @name 防抖
- * @param fn 方法
- * @param ms 时间
+ * @param {Function} fn 方法
+ * @param {Number} ms 时间
+ * @description
+ * 在事件被触发n秒后再执行回调，如果在这n秒内又被触发，则重新计时
  * @example
- * 在第一次触发事件时，不立即执行函数，而是给一个期限值2s
- * 如果在2s内没有再次触发滚动事件，那么就执行函数
- * 如果在2s内再次触发滚动事件，那么当前计时取消，重新计时
+ * window触发resize
+ * input搜索联想
  * window.addEventListener(
  *  'resize',
  *  debounce(() => {
  *    console.log(window.innerWidth);
- *   }, 250)
+ *   }, 500)
  * ); 
  */
-export const debounce = (fn: any, ms = 0) => {
+export const debounce = (fn: any, ms: number = 500) => {
     let timeoutId: any;
     return function (...args: any) {
         clearTimeout(timeoutId);

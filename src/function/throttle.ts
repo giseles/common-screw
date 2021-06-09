@@ -1,10 +1,12 @@
 /**
  * @name 节流
- * @param fn 方法
- * @param wait 时间
+ * @param {Function} fn 方法
+ * @param {Number} wait 时间
+ * @description
+ * 规定在时间内，只能触发一次函数。如果这个时间内触发多次函数，只有一次生效
  * @example
- * 类似控制阀门一样定期开放的函数，也就是让函数执行一次后
- * 在某个时间段内暂时失效，过了这段时间后再重新激活
+ * 鼠标不断点击触发
+ * 监听滚动事件
  * window.addEventListener(
  *  'resize',
  *  throttle(() => {
@@ -12,7 +14,7 @@
  *   }, 250)
  * ); 
  */
-export const throttle = (fn: any, wait: any) => {
+export const throttle = (fn: any, wait: number = 500) => {
     let inThrottle: any, lastFn: any, lastTime: any;
     return function () {
         // @ts-ignore
