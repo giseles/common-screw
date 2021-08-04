@@ -1,8 +1,8 @@
-examples/lib/
+examples/es/
 examples/node_modules/
 examples/yarn.lock
 node_modules/
 coverage/
-lib/
+es/
 package-lock.json
 .idea

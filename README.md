@@ -18,7 +18,7 @@ import { CSBrowser, CSDate, CSDown, CSFormat, CSFunction, CSLang, CSRandom ,CSRe
  
 ```
 
-### 按需加载
+### 按需加载 支持Tree Sharking
 
 ```js
 import { randomBoolean, isArray, addDaysToDate } from 'common-screw'

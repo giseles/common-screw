@@ -10,7 +10,7 @@ module.exports = {
     mode: 'development',
     entry: path.join(__dirname, "./src/index.js"),
     output: {
-        path: path.join(__dirname, "lib/"),
+        path: path.join(__dirname, "es/"),
         filename: "[name].[hash:6].js"
     },
     module: {

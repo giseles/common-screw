@@ -32,7 +32,7 @@ export { toFixed } from './format/toFixed';
 export { toString } from './format/toString';
 
 //函数
-export { debounce } from './debounce';
+export { debounce } from './function/debounce';
 export { deepClone } from './function/deepClone';
 export { throttle } from './function/throttle';
 
