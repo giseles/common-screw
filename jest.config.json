@@ -9,7 +9,7 @@
   "coveragePathIgnorePatterns": [
       "/node_modules/",
       "/examples/",
-      "/dist/",
+      "/lib/",
       "/src/_testComponent"
   ]
 }

@@ -11,7 +11,7 @@ import {
     isBoolean,
     isNil,
     randomBoolean
-} from '../../dist'
+} from '../../lib'
 /**日期类demo */
 console.log(addDaysToDate(null, 0))
 // console.log(addDaysToDate('2020-10-15', 10))
