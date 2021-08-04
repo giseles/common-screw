@@ -13,8 +13,8 @@
 ```js
 import { CSBrowser, CSDate, CSDown, CSFormat, CSFunction, CSLang, CSRandom ,CSRegexp } from 'common-screw'
 
- CSDate.addDaysToDate('2020-10-15', -10)
- CSRandom.randomBoolean()
+ CSDate.addDaysToDate('2020-10-15', -10)  //2020-10-05
+ CSRandom.randomBoolean() //false
  
 ```
 
@@ -23,10 +23,10 @@ import { CSBrowser, CSDate, CSDown, CSFormat, CSFunction, CSLang, CSRandom ,CSRe
 ```js
 import { randomBoolean, isArray, addDaysToDate } from 'common-screw'
 
- randomBoolean()
- isArray(3)
- isArray([1, 2])
- addDaysToDate('2020-10-15', -10)
+ randomBoolean()  //false
+ isArray(3) //false
+ isArray([1, 2])  //true
+ addDaysToDate('2020-10-15', -10) //2020-10-05
  
 ```
 
