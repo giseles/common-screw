@@ -38,6 +38,8 @@ import { randomBoolean, isArray, addDaysToDate } from 'common-screw'
 
 #### &emsp;&emsp;[getUrlParam](https://github.com/giseles/common-screw/blob/main/src/browser/getUrlParam.ts) &emsp;&emsp;&emsp;获取url参数 
 
+#### &emsp;&emsp;[storage](https://github.com/giseles/common-screw/blob/main/src/browser/storage.ts) &emsp;&emsp;&emsp;改造localStorage，可设置过期时间
+
 #### &emsp;&emsp;[toUrlEncode](https://github.com/giseles/common-screw/blob/main/src/browser/toUrlEncode.ts) &emsp;&emsp;&emsp;对象转url参数 
 
 

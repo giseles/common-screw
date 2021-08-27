@@ -10,6 +10,7 @@ export { CSRegexp } from './regexp';
 //浏览器
 export { copyToClipboard } from './browser/copyToClipboard';
 export { getUrlParam } from './browser/getUrlParam';
+export { storage } from './browser/storage';
 export { toUrlEncode } from './browser/toUrlEncode';
 
 //日期
