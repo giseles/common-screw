@@ -25,8 +25,8 @@ export { timestampToDateNoTime } from './date/timestampToDateNoTime';
 export { downToCsv } from './down/downToCsv';
 export { downUrl } from './down/downUrl';
 
-
 //格式
+export { addUnit } from './format/addUnit';
 export { toEnum } from './format/toEnum';
 export { toEnumArray } from './format/toEnumArray';
 export { toFixed } from './format/toFixed';
