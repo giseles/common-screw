@@ -15,10 +15,10 @@ export const downToCsv = (data: any, name: string, time: boolean = true) => {
     if (navigator.msSaveBlob) {
         navigator.msSaveBlob(blob, fileName);
     } else {
-        const element = document.createElement('a');
-        element.href = window.URL.createObjectURL(blob);
-        element.download = fileName + '.csv';
-        element.click();
+        const a = document.createElement('a');
+        a.href = window.URL.createObjectURL(blob);
+        a.download = fileName + '.csv';
+        a.click();
     }
 
 }

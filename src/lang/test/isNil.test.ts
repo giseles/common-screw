@@ -25,3 +25,7 @@ test('判断类型-是否为空', () => {
 test('判断类型-是否为空', () => {
     expect(isNil(3)).toBe(false)
 })
+
+test('判断类型-是否为空', () => {
+    expect(isNil([])).toBe(true)
+})

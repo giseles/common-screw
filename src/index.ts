@@ -7,6 +7,9 @@ export { CSLang } from './lang';
 export { CSRandom } from './random';
 export { CSRegexp } from './regexp';
 
+//接口
+export { LooseObject } from './_interface/LooseObject'
+
 //浏览器
 export { copyToClipboard } from './browser/copyToClipboard';
 export { getUrlParam } from './browser/getUrlParam';
@@ -23,10 +26,12 @@ export { timestampToDateNoTime } from './date/timestampToDateNoTime';
 
 //下载
 export { downToCsv } from './down/downToCsv';
+export { downToXlsx } from './down/downToXlsx';
 export { downUrl } from './down/downUrl';
 
 //格式
 export { addUnit } from './format/addUnit';
+export { getObjKey } from './format/getObjKey';
 export { toEnum } from './format/toEnum';
 export { toEnumArray } from './format/toEnumArray';
 export { toFixed } from './format/toFixed';
