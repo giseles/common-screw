@@ -63,12 +63,16 @@ import { randomBoolean, isArray, addDaysToDate } from 'common-screw'
 ### CSDown
 
 #### &emsp;&emsp;[downToCsv](https://github.com/giseles/common-screw/blob/main/src/down/downToCsv.ts) &emsp;&emsp;&emsp;下载csv文件 
-
+#### &emsp;&emsp;[downToXlsx](https://github.com/giseles/common-screw/blob/main/src/down/downToXlsx.ts) &emsp;&emsp;&emsp;下载xlsx文件 
 #### &emsp;&emsp;[downUrl](https://github.com/giseles/common-screw/blob/main/src/down/downUrl.ts) &emsp;&emsp;&emsp;通过url下载文件 
 
 
 
 ### CSFormat 
+
+#### &emsp;&emsp;[addUnit](https://github.com/giseles/common-screw/blob/main/src/format/addUnit.ts) &emsp;&emsp;&emsp;数字后加单位 
+
+#### &emsp;&emsp;[getObjKey](https://github.com/giseles/common-screw/blob/main/src/format/getObjKey.ts) &emsp;&emsp;&emsp;获取对象属性
 
 #### &emsp;&emsp;[toEnum](https://github.com/giseles/common-screw/blob/main/src/format/toEnum.ts) &emsp;&emsp;&emsp;将数组 => 对象格式 
 
