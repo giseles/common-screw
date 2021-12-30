@@ -104,7 +104,8 @@ import { randomBoolean, isArray, addDaysToDate } from 'common-screw'
 
 #### &emsp;&emsp;[randomBoolean](https://github.com/giseles/common-screw/blob/main/src/random/randomBoolean.ts) &emsp;&emsp;&emsp;随机生成Boolean 
 
-#### &emsp;&emsp;[randomNum](https://github.com/giseles/common-screw/blob/main/src/random/randomNum.ts) &emsp;&emsp;&emsp;生成指定范围[min, max]的随机数   
+#### &emsp;&emsp;[randomNum](https://github.com/giseles/common-screw/blob/main/src/random/randomNum.ts) &emsp;&emsp;&emsp;生成指定范围[min, max]的随机数  
+
 
 ### CSRegexp  
 
@@ -118,5 +119,12 @@ import { randomBoolean, isArray, addDaysToDate } from 'common-screw'
 
 #### &emsp;&emsp;[isPhoneNum](https://github.com/giseles/common-screw/blob/main/src/regexp/isPhoneNum.ts) &emsp;&emsp;&emsp;判断是否为手机号  
 
-#### &emsp;&emsp;[isUrl](https://github.com/giseles/common-screw/blob/main/src/regexp/isUrl.ts) &emsp;&emsp;&emsp;判断是否为URL地址   
+#### &emsp;&emsp;[isUrl](https://github.com/giseles/common-screw/blob/main/src/regexp/isUrl.ts) &emsp;&emsp;&emsp;判断是否为URL地址  
+
+
+### CSAntd  
+
+#### &emsp;&emsp;[antdConfirm](https://github.com/giseles/common-screw/blob/main/src/antd/antdConfirm.ts) &emsp;&emsp;&emsp;统一返回信息提示框   
+
+#### &emsp;&emsp;[antdMessage](https://github.com/giseles/common-screw/blob/main/src/antd/antdMessage.ts) &emsp;&emsp;&emsp;统一返回数据提示
 
