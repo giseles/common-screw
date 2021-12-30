@@ -1,15 +1,23 @@
+// @ts-ignore
 import { Modal } from "antd"
+import { LooseObject, ModalType } from "../_interface/LooseObject"
 
 /**
- * @name 统一返回数据弹窗
- * @param  {object} 数据
+ * @name 统一返回信息提示框
+ * @param  {object} data 数据
+ * @param  {object} type 类型
  * @example
- * antdConfirm({code:'8001',data:'成功'})     ---- 成功
- * antdConfirm({code:'1111',data:'警告'})     ---- 警告
- * antdConfirm({code:'4004',data:'失败'})     ---- 失败
+ * antdConfirm({msg:'success',data:'成功'})     ---- 成功
+ * antdConfirm({msg:'info',data:'信息'})        ---- 信息
+ * antdConfirm({msg:'warning',data:'警告'})     ---- 警告
+ * antdConfirm({msg:'error',data:'失败'})       ---- 失败
  */
-export const antdConfirm = (data: any) => {
-  Modal.error({
+
+export const antdConfirm = (
+  data: LooseObject,
+  type: keyof ModalType = "error"
+) => {
+  Modal[type]({
     title: data.msg,
     content: data.data
   })

@@ -12,8 +12,8 @@ export { CSRegexp } from "./regexp"
 export { LooseObject } from "./_interface/LooseObject"
 
 //antd 通用方法
-import { antdConfirm } from "./antd/antdConfirm"
-import { antdMessage } from "./antd/antdMessage"
+export { antdConfirm } from "./antd/antdConfirm"
+export { antdMessage } from "./antd/antdMessage"
 
 //浏览器
 export { copyToClipboard } from "./browser/copyToClipboard"
