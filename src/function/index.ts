@@ -1,17 +1,16 @@
-import { debounce } from './debounce';
-import { deepClone } from './deepClone';
-import { throttle } from './throttle';
-
+import { debounce } from "./debounce"
+import { deepClone } from "./deepClone"
+import { throttle } from "./throttle"
 
 /**
  * @name 常用函数 类方法
- * @example	
+ * @example
  * debounce     //防抖
  * deepClone    //深拷贝
  * throttle     //节流
  */
 export const CSFunction = {
-    debounce,
-    deepClone,
-    throttle
-};
+  debounce,
+  deepClone,
+  throttle
+}
