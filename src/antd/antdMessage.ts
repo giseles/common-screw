@@ -4,9 +4,9 @@ import { LooseObject, MessageType } from "../_interface/LooseObject"
 /**
  *
  * @name 统一返回数据提示
- * @param  {object} data 数据
- * @param  {number} maxCount 最大显示数
- * @param  {number} successCode 成功code码
+ * @param  {Object} data 数据
+ * @param  {Number} maxCount 最大显示数 = 1
+ * @param  {Number} successCode 成功code码 = 8001
  * @example
  * antdMessage({code:'8001',msg:'成功'})           ---- 成功
  * antdMessage({code:'loading',msg:'加载中'})      ---- 加载中

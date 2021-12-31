@@ -4,8 +4,8 @@ import { LooseObject, ModalType } from "../_interface/LooseObject"
 
 /**
  * @name 统一返回信息提示框
- * @param  {object} data 数据
- * @param  {object} type 类型
+ * @param  {Object} data 数据
+ * @param  {Object} type 类型 = "error"
  * @example
  * antdConfirm({msg:'success',data:'成功'})     ---- 成功
  * antdConfirm({msg:'info',data:'信息'})        ---- 信息

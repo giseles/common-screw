@@ -2,9 +2,9 @@ import downDate from "../_utils/downDate"
 
 /**
  * @name 下载csv文件
- * @param data 文件内容
- * @param name 文件名
- * @param time 是否需要日期
+ * @param {Any} data 文件内容
+ * @param {String} name 文件名
+ * @param {Boolean} time 是否需要日期 = true
  * @example
  * downToCsv(data,'文件名')
  */
