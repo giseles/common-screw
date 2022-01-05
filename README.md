@@ -13,7 +13,7 @@
 ```js
 import { CSBrowser, CSDate, CSDown, CSFormat, CSFunction, CSLang, CSRandom ,CSRegexp } from 'common-screw'
 
- CSDate.addDaysToDate('2020-10-15', -10)  // 2020-10-05
+ CSDate.addDaysToDate('2021-10-15', -10)  // 2021-10-05
  CSRandom.randomBoolean()  // false
  
 ```
