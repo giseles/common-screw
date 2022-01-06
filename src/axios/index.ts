@@ -9,6 +9,7 @@ import { antdMessage, storage } from ".."
  * @example
  * Axios.post('url',{data})           ---- POST请求
  * Axios.get('url',{data})            ---- GET请求
+ * const apiList = async (data: any) => axios.post('url', { data })
  */
 export const Axios = (config: Object = defaultConfig) => {
   return new MyAxios({ ...defaultConfig, ...config })
@@ -19,10 +20,10 @@ const defaultConfig = {
   successCode: 8001, //请求成功code码
   axiosConfig: { timeout: 5000 }, //超时时间
   exceptTokenUrls: [], //无需token的url
-  noNeedCodeUrls: [], //无需code成功的url
-  showTime: true, //显示请求耗时
+  noNeedCodeUrls: [], //无需code成功码的url
   errorMessage: antdMessage, //错误提示
-  token: () => storage.getItem("token") //token
+  token: () => storage.getItem("token"), //token
+  showTime: true //显示请求耗时
 }
 
 // 状态码错误信息
