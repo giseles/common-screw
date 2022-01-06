@@ -1,22 +1,27 @@
 # common-screw
-提供项目中常用的工具函数，比如时间戳、格式的转换、数据类型判断等。如名字screw一样，做一个项目开发过程中的螺丝钉。
 
+> 前端业务代码工具库 
+
+提供项目中常用的工具函数，比如`时间戳`、`格式的转换`、`数据类型判断`、`节流函数`等。如名字screw一样，做一个项目开发过程中的螺丝钉。
+
+
+> 目的：高效率完成前端业务代码
+
+将业务开发过程中的常用函数，为避免不同项目多次复制粘贴的麻烦，这里统一封装，并发布到npm，以提高开发效率。
 
 
 ### 使用说明
 
-- npm i common-screw 
-- 或 yarn add common-screw
-
-
-### 模块加载
 ```js
-import { CSBrowser, CSDate, CSDown, CSFormat, CSFunction, CSLang, CSRandom ,CSRegexp } from 'common-screw'
+npm i common-screw
 
- CSDate.addDaysToDate('2021-10-15', -10)  // 2021-10-05
- CSRandom.randomBoolean()  // false
- 
 ```
+
+```js
+yarn add common-screw
+
+```
+
 
 ### 按需加载 支持 Tree Sharking
 
@@ -29,6 +34,16 @@ import { randomBoolean, isArray, addDaysToDate } from 'common-screw'
  addDaysToDate('2020-10-15', -10)  // 2020-10-05
  
 ```
+
+### 模块加载
+```js
+import { CSBrowser, CSDate, CSDown, CSFormat, CSFunction, CSLang, CSRandom ,CSRegexp } from 'common-screw'
+
+ CSDate.addDaysToDate('2021-10-15', -10)  // 2021-10-05
+ CSRandom.randomBoolean()  // false
+ 
+```
+
 
 ## :package:  API文档
 
