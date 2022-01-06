@@ -147,3 +147,7 @@ import { CSBrowser, CSDate, CSDown, CSFormat, CSFunction, CSLang, CSRandom ,CSRe
 
 #### &emsp;&emsp;[antdMessage](https://github.com/giseles/common-screw/blob/main/src/antd/antdMessage.ts) &emsp;&emsp;&emsp;统一返回数据提示
 
+### CSAxios
+
+#### &emsp;&emsp;[Axios](https://github.com/giseles/common-screw/blob/main/src/axios/index.ts) &emsp;&emsp;&emsp;axios 发送网络请求
+
