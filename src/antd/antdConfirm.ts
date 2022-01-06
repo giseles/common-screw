@@ -1,6 +1,7 @@
 // @ts-ignore
 import { Modal } from "antd"
-import { LooseObject, ModalType } from "../_interface/LooseObject"
+import { LooseObject } from "../_interface/LooseObject"
+import { ModalType } from "../_interface/antd"
 
 /**
  * @name 统一返回信息提示框

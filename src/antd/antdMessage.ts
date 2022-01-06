@@ -1,6 +1,7 @@
 // @ts-ignore
 import { message } from "antd"
-import { LooseObject, MessageType } from "../_interface/LooseObject"
+import { LooseObject } from "../_interface/LooseObject"
+import { MessageType } from "../_interface/antd"
 /**
  *
  * @name 统一返回数据提示

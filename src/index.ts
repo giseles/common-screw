@@ -15,6 +15,9 @@ export { LooseObject } from "./_interface/LooseObject"
 export { antdConfirm } from "./antd/antdConfirm"
 export { antdMessage } from "./antd/antdMessage"
 
+//axios 发送网络请求
+export { Axios } from "./axios"
+
 //浏览器
 export { copyToClipboard } from "./browser/copyToClipboard"
 export { getUrlParam } from "./browser/getUrlParam"
