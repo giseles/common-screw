@@ -23,7 +23,7 @@ yarn add common-screw
 ```
 
 
-### 按需加载 支持 Tree Sharking
+### 按需加载 默认支持基于 ES Modules 的 Tree Shaking
 
 ```js
 import { randomBoolean, isArray, addDaysToDate } from 'common-screw'
