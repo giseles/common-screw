@@ -60,9 +60,6 @@ export { randomBoolean } from "./random/randomBoolean"
 export { randomNum } from "./random/randomNum"
 
 // 正则
-export { isAccountName } from "./regexp/isAccountName"
-export { isEmail } from "./regexp/isEmail"
-export { isIdCard } from "./regexp/isIdCard"
-export { isPassword } from "./regexp/isPassword"
-export { isPhoneNum } from "./regexp/isPhoneNum"
-export { isUrl } from "./regexp/isUrl"
+
+export { regList } from "./regexp/regList"
+export { toRule } from "./regexp/toRule"

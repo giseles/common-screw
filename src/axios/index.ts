@@ -69,8 +69,7 @@ class MyAxios {
     this.setInterceptors()
   }
 
-  /** Axios 拦截器设置
-   */
+  // Axios 拦截器设置
   setInterceptors() {
     let start = 0
     // @ts-ignore
