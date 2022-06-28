@@ -3,8 +3,8 @@
  * @param {Any} reg 规则
  * @param {String} str 需验证字符串
  * @example
- * toRule(regList.account.pattern,'admin')    ---- true
- * toRule(regList.password.pattern,'admin')   ---- false
+ * toRule(REG_LIST.account.pattern,'admin')    ---- true
+ * toRule(REG_LIST.password.pattern,'admin')   ---- false
  */
 export const toRule = (reg: any, str: string) => {
   return new RegExp(reg).test(str)

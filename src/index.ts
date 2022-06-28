@@ -61,5 +61,5 @@ export { randomNum } from "./random/randomNum"
 
 // 正则
 
-export { regList } from "./regexp/regList"
+export { REG_LIST } from "./regexp/regList"
 export { toRule } from "./regexp/toRule"

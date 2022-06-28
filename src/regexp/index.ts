@@ -1,4 +1,4 @@
-import { regList } from "./regList"
+import { REG_LIST } from "./regList"
 import { toRule } from "./toRule"
 
 /**
@@ -8,6 +8,6 @@ import { toRule } from "./toRule"
  * toRule          // 判断是否为指定格式
  */
 export const CSRegexp = {
-  regList,
+  REG_LIST,
   toRule
 }
