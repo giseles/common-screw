@@ -1,4 +1,3 @@
-export { CSAntd } from "./antd"
 export { CSBrowser } from "./browser"
 export { CSDate } from "./date"
 export { CSDown } from "./down"
@@ -10,13 +9,6 @@ export { CSRegexp } from "./regexp"
 
 //接口
 export { LooseObject } from "./_interface/LooseObject"
-
-//antd 通用方法
-export { antdConfirm } from "./antd/antdConfirm"
-export { antdMessage } from "./antd/antdMessage"
-
-//axios 发送网络请求
-export { Axios } from "./axios"
 
 //浏览器
 export { copyToClipboard } from "./browser/copyToClipboard"
