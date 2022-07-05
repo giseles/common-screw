@@ -3,6 +3,11 @@ import { getUrlParam } from "./getUrlParam"
 import { toUrlEncode } from "./toUrlEncode"
 import { storage } from "./storage"
 
+export * from "./copyToClipboard"
+export * from "./getUrlParam"
+export * from "./toUrlEncode"
+export * from "./storage"
+
 /**
  * @name 浏览器 类方法
  * @example

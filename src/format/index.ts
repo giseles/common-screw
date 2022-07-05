@@ -5,6 +5,13 @@ import { toEnumArray } from "./toEnumArray"
 import { toFixed } from "./toFixed"
 import { toString } from "./toString"
 
+export * from "./addUnit"
+export * from "./getObjKey"
+export * from "./toEnum"
+export * from "./toEnumArray"
+export * from "./toFixed"
+export * from "./toString"
+
 /**
  * @name 格式 类方法
  * @example

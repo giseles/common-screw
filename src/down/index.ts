@@ -1,16 +1,20 @@
-import { downToCsv } from './downToCsv';
-import { downToXlsx } from './downToXlsx';
-import { downUrl } from './downUrl';
+import { downToCsv } from "./downToCsv"
+import { downToXlsx } from "./downToXlsx"
+import { downUrl } from "./downUrl"
+
+export * from "./downToCsv"
+export * from "./downToXlsx"
+export * from "./downUrl"
 
 /**
  * @name 下载 类方法
- * @example	
+ * @example
  * downToCsv     // 下载csv文件
  * downToXlsx    // 下载xlsx文件
  * downUrl       // 通过url下载文件
  */
 export const CSDown = {
-    downToCsv,
-    downToXlsx,
-    downUrl
-};
+  downToCsv,
+  downToXlsx,
+  downUrl
+}

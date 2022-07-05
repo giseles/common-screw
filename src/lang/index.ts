@@ -2,6 +2,10 @@ import { isArray } from "./isArray"
 import { isBoolean } from "./isBoolean"
 import { isNil } from "./isNil"
 
+export * from "./isArray"
+export * from "./isBoolean"
+export * from "./isNil"
+
 /**
  * @name 语法 类方法
  * @example

@@ -1,6 +1,9 @@
 import { REG_LIST } from "./regList"
 import { toRule } from "./toRule"
 
+export * from "./regList"
+export * from "./toRule"
+
 /**
  * @name 正则 类方法
  * @example

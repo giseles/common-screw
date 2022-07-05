@@ -5,6 +5,13 @@ import { diffTime } from "./diffTime"
 import { timestampToDate } from "./timestampToDate"
 import { timestampToDateNoTime } from "./timestampToDateNoTime"
 
+export * from "./addDaysToDate"
+export * from "./addMinutesToDate"
+export * from "./dateToTimestamp"
+export * from "./diffTime"
+export * from "./timestampToDate"
+export * from "./timestampToDateNoTime"
+
 /**
  * @name 日期 类方法
  * @example

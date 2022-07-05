@@ -2,6 +2,10 @@ import { debounce } from "./debounce"
 import { deepClone } from "./deepClone"
 import { throttle } from "./throttle"
 
+export * from "./debounce"
+export * from "./deepClone"
+export * from "./throttle"
+
 /**
  * @name 常用函数 类方法
  * @example

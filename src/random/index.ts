@@ -1,6 +1,9 @@
 import { randomBoolean } from "./randomBoolean"
 import { randomNum } from "./randomNum"
 
+export * from "./randomBoolean"
+export * from "./randomNum"
+
 /**
  * @name 随机 类方法
  * @example
