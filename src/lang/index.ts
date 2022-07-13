@@ -1,20 +1,37 @@
-import { isArray } from "./isArray"
-import { isBoolean } from "./isBoolean"
+import {
+  isArray,
+  isBoolean,
+  isObject,
+  isFunction,
+  isString,
+  isNumber,
+  isUndefined
+} from "./common"
 import { isNil } from "./isNil"
 
-export * from "./isArray"
-export * from "./isBoolean"
+export * from "./common"
 export * from "./isNil"
 
 /**
  * @name 语法 类方法
  * @example
+ * isNil         //判断类型-为空
  * isArray       //判断类型-数组
  * isBoolean     //判断类型-布尔值
- * isNil         //判断类型-是否为空
+ * isObject      //判断类型-对象
+ * isFunction    //判断类型-方法
+ * isString      //判断类型-字符串
+ * isNumber      //判断类型-数字
+ * isUndefined   //判断类型-undefined
+ *
  */
 export const CSLang = {
+  isNil,
   isArray,
   isBoolean,
-  isNil
+  isObject,
+  isFunction,
+  isString,
+  isNumber,
+  isUndefined
 }
