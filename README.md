@@ -51,17 +51,19 @@ CSRandom.randomBoolean() // false
 
 ## :package: API 文档
 
-### CSBrowser
+### CSBrowser 浏览器类方法
 
 #### &emsp;&emsp;[copyToClipboard](https://github.com/giseles/common-screw/blob/main/src/browser/copyToClipboard.ts) &emsp;&emsp;&emsp;复制到粘贴板
 
 #### &emsp;&emsp;[getUrlParam](https://github.com/giseles/common-screw/blob/main/src/browser/getUrlParam.ts) &emsp;&emsp;&emsp;获取 url 参数
 
+#### &emsp;&emsp;[isBrowser](https://github.com/giseles/common-screw/blob/main/src/browser/isBrowser.ts) &emsp;&emsp;&emsp;检查是否为浏览器环境
+
 #### &emsp;&emsp;[storage](https://github.com/giseles/common-screw/blob/main/src/browser/storage.ts) &emsp;&emsp;&emsp;改造 localStorage，可设置过期时间
 
 #### &emsp;&emsp;[toUrlEncode](https://github.com/giseles/common-screw/blob/main/src/browser/toUrlEncode.ts) &emsp;&emsp;&emsp;对象转 url 参数
 
-### CSDate
+### CSDate 日期类方法
 
 #### &emsp;&emsp;[addDaysToDate](https://github.com/giseles/common-screw/blob/main/src/date/addDaysToDate.ts) &emsp;&emsp;&emsp;日期加前后天数
 
@@ -75,7 +77,7 @@ CSRandom.randomBoolean() // false
 
 #### &emsp;&emsp;[timestampToDateNoTime](https://github.com/giseles/common-screw/blob/main/src/date/timestampToDateNoTime.ts) &emsp;&emsp;&emsp;时间戳转日期   无时间  
 
-### CSDown
+### CSDown 下载类方法
 
 #### &emsp;&emsp;[downToCsv](https://github.com/giseles/common-screw/blob/main/src/down/downToCsv.ts) &emsp;&emsp;&emsp;下载 csv 文件
 
@@ -83,7 +85,7 @@ CSRandom.randomBoolean() // false
 
 #### &emsp;&emsp;[downUrl](https://github.com/giseles/common-screw/blob/main/src/down/downUrl.ts) &emsp;&emsp;&emsp;通过 url 下载文件
 
-### CSFormat
+### CSFormat 格式类方法
 
 #### &emsp;&emsp;[addUnit](https://github.com/giseles/common-screw/blob/main/src/format/addUnit.ts) &emsp;&emsp;&emsp;数字后加单位
 
@@ -97,7 +99,7 @@ CSRandom.randomBoolean() // false
 
 #### &emsp;&emsp;[toString](https://github.com/giseles/common-screw/blob/main/src/format/toString.ts) &emsp;&emsp;&emsp;字符串转换
 
-### CSFunction
+### CSFunction 常用函数类方法
 
 #### &emsp;&emsp;[debounce](https://github.com/giseles/common-screw/blob/main/src/function/debounce.ts) &emsp;&emsp;&emsp;防抖
 
@@ -105,32 +107,24 @@ CSRandom.randomBoolean() // false
 
 #### &emsp;&emsp;[throttle](https://github.com/giseles/common-screw/blob/main/src/function/throttle.ts) &emsp;&emsp;&emsp;节流
 
-### CSLang
+### CSLang 语法类方法
 
-#### &emsp;&emsp;[isArray](https://github.com/giseles/common-screw/blob/main/src/lang/isArray.ts) &emsp;&emsp;&emsp;判断类型-数组
-
-#### &emsp;&emsp;[isBoolean](https://github.com/giseles/common-screw/blob/main/src/lang/isBoolean.ts) &emsp;&emsp;&emsp;判断类型-布尔值
+#### &emsp;&emsp;[common](https://github.com/giseles/common-screw/blob/main/src/lang/common.ts) &emsp;&emsp;&emsp;常见格式判断
 
 #### &emsp;&emsp;[isNil](https://github.com/giseles/common-screw/blob/main/src/lang/isNil.ts) &emsp;&emsp;&emsp;判断类型-是否为空
 
-### CSRandom
+### CSProject 项目常用类方法
+
+#### &emsp;&emsp;[toMenuData](https://github.com/giseles/common-screw/blob/main/src/project/toMenuData.ts) &emsp;&emsp;&emsp;将菜单数据格式化
+
+### CSRandom 随机类方法
 
 #### &emsp;&emsp;[randomBoolean](https://github.com/giseles/common-screw/blob/main/src/random/randomBoolean.ts) &emsp;&emsp;&emsp;随机生成 Boolean
 
 #### &emsp;&emsp;[randomNum](https://github.com/giseles/common-screw/blob/main/src/random/randomNum.ts) &emsp;&emsp;&emsp;生成指定范围[min, max]的随机数
 
-### CSRegexp
+### CSRegexp 正则类方法
 
 #### &emsp;&emsp;[regList](https://github.com/giseles/common-screw/blob/main/src/regexp/regList.ts) &emsp;&emsp;&emsp;常见格式规则
 
 #### &emsp;&emsp;[toRule](https://github.com/giseles/common-screw/blob/main/src/regexp/toRule.ts) &emsp;&emsp;&emsp;判断是否为指定格式
-
-### CSAntd
-
-#### &emsp;&emsp;[antdConfirm](https://github.com/giseles/common-screw/blob/main/src/antd/antdConfirm.ts) &emsp;&emsp;&emsp;统一返回信息提示框
-
-#### &emsp;&emsp;[antdMessage](https://github.com/giseles/common-screw/blob/main/src/antd/antdMessage.ts) &emsp;&emsp;&emsp;统一返回数据提示
-
-### CSAxios
-
-#### &emsp;&emsp;[Axios](https://github.com/giseles/common-screw/blob/main/src/axios/index.ts) &emsp;&emsp;&emsp;axios 发送网络请求
