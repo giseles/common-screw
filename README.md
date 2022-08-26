@@ -83,13 +83,13 @@ CSRandom.randomBoolean() // false
 
 ### CSDevice 设备类方法
 
-#### &emsp;&emsp;[getOS](https://github.com/giseles/common-screw/blob/main/src/decive/getOS.ts) &emsp;&emsp;&emsp;操作系统类型
+#### &emsp;&emsp;[getOS](https://github.com/giseles/common-screw/blob/main/src/device/getOS.ts) &emsp;&emsp;&emsp;操作系统类型
 
-#### &emsp;&emsp;[isMobile](https://github.com/giseles/common-screw/blob/main/src/decive/isMobile.ts) &emsp;&emsp;&emsp;是否是移动端
+#### &emsp;&emsp;[isMobile](https://github.com/giseles/common-screw/blob/main/src/device/isMobile.ts) &emsp;&emsp;&emsp;是否是移动端
 
-#### &emsp;&emsp;[isSupportCamera](https://github.com/giseles/common-screw/blob/main/src/decive/isSupportCamera.ts) &emsp;&emsp;&emsp;是否支持摄像头
+#### &emsp;&emsp;[isSupportCamera](https://github.com/giseles/common-screw/blob/main/src/device/isSupportCamera.ts) &emsp;&emsp;&emsp;是否支持摄像头
 
-#### &emsp;&emsp;[isWeiXin](https://github.com/giseles/common-screw/blob/main/src/decive/isWeiXin.ts) &emsp;&emsp;&emsp;是否是微信
+#### &emsp;&emsp;[isWeiXin](https://github.com/giseles/common-screw/blob/main/src/device/isWeiXin.ts) &emsp;&emsp;&emsp;是否是微信
 
 ### CSDown 下载类方法
 
