@@ -21,13 +21,48 @@ export const isArray = isType("Array")
  */
 export const isBoolean = isType("Boolean")
 
-export const isObject = (value: unknown): value is Record<any, any> =>
+/**
+ * @name 判断类型-对象
+ * @param {Any} value 传入值
+ * @example
+ *  isObject(11)     ---- false
+ *  isObject({})     ---- true
+ */
+export const isObject = (value: unknown) =>
   value !== null && typeof value === "object"
-export const isFunction = (value: unknown): value is Function =>
-  typeof value === "function"
-export const isString = (value: unknown): value is string =>
-  typeof value === "string"
-export const isNumber = (value: unknown): value is number =>
-  typeof value === "number"
-export const isUndefined = (value: unknown): value is undefined =>
-  typeof value === "undefined"
+
+/**
+ * @name 判断类型-函数
+ * @param {Any} value 传入值
+ * @example
+ *  isFunction(11)         ---- false
+ *  isFunction(()=>{})     ---- true
+ */
+export const isFunction = (value: unknown) => typeof value === "function"
+
+/**
+ * @name 判断类型-字符串
+ * @param {Any} value 传入值
+ * @example
+ *  isString(11)         ---- false
+ *  isString('11')       ---- true
+ */
+export const isString = (value: unknown) => typeof value === "string"
+
+/**
+ * @name 判断类型-数字
+ * @param {Any} value 传入值
+ * @example
+ *  isNumber(11)         ---- true
+ *  isNumber('11')       ---- false
+ */
+export const isNumber = (value: unknown) => typeof value === "number"
+
+/**
+ * @name 判断类型-undefined
+ * @param {Any} value 传入值
+ * @example
+ *  isNumber(undefined)    ---- true
+ *  isNumber('11')         ---- false
+ */
+export const isUndefined = (value: unknown) => typeof value === "undefined"
