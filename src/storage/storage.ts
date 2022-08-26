@@ -1,10 +1,7 @@
-interface itemObj {
-  data: any
-  expire: number
-}
+import { itemObj } from "../_interface"
 
 /**
- * @name 改造localStorage，可设置过期时间
+ * @name 改造localStorage,可设置过期时间
  * @param {String} key 字段
  * @param {Any} value 值
  * @param {Number} expire 过期时间 = 7天

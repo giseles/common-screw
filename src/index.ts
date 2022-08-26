@@ -1,4 +1,4 @@
-export * from "./_interface/LooseObject" // 接口
+export * from "./_interface" // 接口
 export * from "./browser" // 浏览器
 export * from "./date" // 日期
 export * from "./down" // 下载

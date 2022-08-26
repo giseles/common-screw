@@ -1,4 +1,4 @@
-import { LooseObject } from "../_interface/LooseObject"
+import { LooseObject } from "../_interface"
 /**
  * @name 将数组 => 对象格式
  * @param {Any} data 枚举
