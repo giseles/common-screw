@@ -7,10 +7,7 @@ import { timestampToDate, timestampToDateNoTime } from "./index"
  * @returns {Date} 日期+时间
  * @example formatDate(1622711246300,'yyyy-MM-dd HH:mm:ss')  ---- 2021-06-03 17:06:29
  */
-export const formatDate = (
-  timestamp: any,
-  format: string = "yyyy-MM-dd HH:mm:ss"
-) => {
+export const formatDate = (timestamp?: any, format?: string) => {
   if (!timestamp) {
     return "-"
   } else if (!format) {
@@ -20,7 +17,7 @@ export const formatDate = (
   }
 
   let time = new Date(timestamp),
-    Y = time.getFullYear() + "",
+    Y = time.getFullYear(),
     M = time.getMonth() + 1,
     D = time.getDate(),
     h = time.getHours(),
@@ -31,7 +28,7 @@ export const formatDate = (
     .replace(/YYYY|yyyy/g, Y)
     .replace(/YY|yy/g, Y.substr(2, 2))
     .replace(/MM/g, addZero(M))
-    .replace(/DD/g, addZero(D))
+    .replace(/DD|dd/g, addZero(D))
     .replace(/HH|hh/g, addZero(h))
     .replace(/mm/g, addZero(m))
     .replace(/ss/g, addZero(s))

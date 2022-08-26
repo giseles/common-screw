@@ -4,4 +4,4 @@ import { timestampToDate } from "./timestampToDate"
  * @returns {Date} 日期+时间
  * @example getNowTime()  ---- 2021-06-03 17:06:29
  */
-export const getNowTime = timestampToDate()
+export const getNowTime = () => timestampToDate()

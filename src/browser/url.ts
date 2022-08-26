@@ -2,12 +2,12 @@
  * @name 操作URL
  * @desc 获取、操作 url 中所有的参数
  * @example
- * url.getUrlInfo('www.baidu.com?a=1&b=2')
- * url.getAllParams('www.baidu.com?a=1&b=2')
- * url.getParams('www.baidu.com?a=1&b=2',a)
- * url.appendParams('www.baidu.com?a=1&b=2',c,3)
- * url.setParams('www.baidu.com?a=1&b=2',a,3)
- * url.delParams('www.baidu.com?a=1&b=2',a)
+ * url.getUrlInfo('https://www.baidu.com?a=1&b=2')
+ * url.getAllParams('https://www.baidu.com?a=1&b=2')
+ * url.getParams('https://www.baidu.com?a=1&b=2','a')
+ * url.appendParams('https://www.baidu.com?a=1&b=2','c',3)
+ * url.setParams('https://www.baidu.com?a=1&b=2','a',3)
+ * url.delParams('https://www.baidu.com?a=1&b=2','a')
  */
 export const url = {
   // 获取Url信息
