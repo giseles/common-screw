@@ -12,7 +12,7 @@ export const formatDate = (timestamp?: any, format?: string) => {
     return "-"
   } else if (!format) {
     return timestampToDate(timestamp)
-  } else if (format === "yyyy-MM-dd") {
+  } else if (format === "yyyy-MM-dd" || format === "yyyy-MM-DD") {
     return timestampToDateNoTime(timestamp)
   }
 
@@ -26,7 +26,6 @@ export const formatDate = (timestamp?: any, format?: string) => {
 
   return format
     .replace(/YYYY|yyyy/g, Y)
-    .replace(/YY|yy/g, Y.substr(2, 2))
     .replace(/MM/g, addZero(M))
     .replace(/DD|dd/g, addZero(D))
     .replace(/HH|hh/g, addZero(h))

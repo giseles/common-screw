@@ -3,7 +3,7 @@ import { addMinutesToDate } from "./addMinutesToDate"
 import { dateToTimestamp } from "./dateToTimestamp"
 import { diffTime } from "./diffTime"
 import { formatDate } from "./formatDate"
-import { getNowTime } from "./getNowTime"
+import { getNow } from "./getNow"
 import { timestampToDate } from "./timestampToDate"
 import { timestampToDateNoTime } from "./timestampToDateNoTime"
 
@@ -12,7 +12,7 @@ export * from "./addMinutesToDate"
 export * from "./dateToTimestamp"
 export * from "./diffTime"
 export * from "./formatDate"
-export * from "./getNowTime"
+export * from "./getNow"
 export * from "./timestampToDate"
 export * from "./timestampToDateNoTime"
 
@@ -24,7 +24,7 @@ export * from "./timestampToDateNoTime"
  * dateToTimestamp         //日期转时间戳
  * diffTime                //日期间隔时间
  * formatDate              //格式化时间
- * getNowTime              //获取当前时间
+ * getNow                  //获取当前时间
  * timestampToDate         //时间戳转日期
  * timestampToDateNoTime   //时间戳转日期 无时间
  */
@@ -34,7 +34,7 @@ export const CSDate = {
   dateToTimestamp,
   diffTime,
   formatDate,
-  getNowTime,
+  getNow,
   timestampToDate,
   timestampToDateNoTime
 }
