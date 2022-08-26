@@ -59,9 +59,9 @@ CSRandom.randomBoolean() // false
 
 #### &emsp;&emsp;[isBrowser](https://github.com/giseles/common-screw/blob/main/src/browser/isBrowser.ts) &emsp;&emsp;&emsp;检查是否为浏览器环境
 
-#### &emsp;&emsp;[storage](https://github.com/giseles/common-screw/blob/main/src/browser/storage.ts) &emsp;&emsp;&emsp;改造 localStorage，可设置过期时间
-
 #### &emsp;&emsp;[toUrlEncode](https://github.com/giseles/common-screw/blob/main/src/browser/toUrlEncode.ts) &emsp;&emsp;&emsp;对象转 url 参数
+
+#### &emsp;&emsp;[url](https://github.com/giseles/common-screw/blob/main/src/browser/url.ts) &emsp;&emsp;&emsp;操作 URL
 
 ### CSDate 日期类方法
 
@@ -73,9 +73,23 @@ CSRandom.randomBoolean() // false
 
 #### &emsp;&emsp;[diffTime](https://github.com/giseles/common-screw/blob/main/src/date/diffTime.ts) &emsp;&emsp;&emsp;日期间隔时间
 
+#### &emsp;&emsp;[formatDate](https://github.com/giseles/common-screw/blob/main/src/date/formatDate.ts) &emsp;&emsp;&emsp;格式化时间
+
+#### &emsp;&emsp;[getNow](https://github.com/giseles/common-screw/blob/main/src/date/getNow.ts) &emsp;&emsp;&emsp;获取当前时间
+
 #### &emsp;&emsp;[timestampToDate](https://github.com/giseles/common-screw/blob/main/src/date/timestampToDate.ts) &emsp;&emsp;&emsp;时间戳转日期
 
 #### &emsp;&emsp;[timestampToDateNoTime](https://github.com/giseles/common-screw/blob/main/src/date/timestampToDateNoTime.ts) &emsp;&emsp;&emsp;时间戳转日期   无时间  
+
+### CSDevice 设备类方法
+
+#### &emsp;&emsp;[getOS](https://github.com/giseles/common-screw/blob/main/src/decive/getOS.ts) &emsp;&emsp;&emsp;操作系统类型
+
+#### &emsp;&emsp;[isMobile](https://github.com/giseles/common-screw/blob/main/src/decive/isMobile.ts) &emsp;&emsp;&emsp;是否是移动端
+
+#### &emsp;&emsp;[isSupportCamera](https://github.com/giseles/common-screw/blob/main/src/decive/isSupportCamera.ts) &emsp;&emsp;&emsp;是否支持摄像头
+
+#### &emsp;&emsp;[isWeiXin](https://github.com/giseles/common-screw/blob/main/src/decive/isWeiXin.ts) &emsp;&emsp;&emsp;是否是微信
 
 ### CSDown 下载类方法
 
@@ -128,3 +142,13 @@ CSRandom.randomBoolean() // false
 #### &emsp;&emsp;[regList](https://github.com/giseles/common-screw/blob/main/src/regexp/regList.ts) &emsp;&emsp;&emsp;常见格式规则
 
 #### &emsp;&emsp;[toRule](https://github.com/giseles/common-screw/blob/main/src/regexp/toRule.ts) &emsp;&emsp;&emsp;判断是否为指定格式
+
+### CSStorage 存储类方法
+
+#### &emsp;&emsp;[storage](https://github.com/giseles/common-screw/blob/main/src/storage/storage.ts) &emsp;&emsp;&emsp;改造 localStorage,可设置过期时间
+
+### CSString 字符串类方法
+
+#### &emsp;&emsp;[getEscapeString](https://github.com/giseles/common-screw/blob/main/src/string/getEscapeString.ts) &emsp;&emsp;&emsp;字符串的转义
+
+#### &emsp;&emsp;[getUnEscapeString](https://github.com/giseles/common-screw/blob/main/src/string/getUnEscapeString.ts) &emsp;&emsp;&emsp;字符串的反转义
