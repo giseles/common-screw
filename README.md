@@ -5,13 +5,13 @@ English | [简体中文](./README-zh_CN.md)
 
 </div>
 
-> 前端业务代码工具库
+> Front-end business code tool library
 
-提供项目中常用的工具函数，比如`time stamp`、`格式的转换`、`数据类型判断`、`节流函数`等。如名字 screw 一样，做一个项目开发过程中的螺丝钉。
+Provide the commonly used tool functions in the project, such as `timestamp`, `conversion of format`, `data type judgment`, `throttling function`, etc. Like the name screw, be a screw in the project development process.
 
-> 目的：高效率完成前端业务代码
+> Purpose: complete front-end business code efficiently
 
-将业务开发过程中的常用函数，为避免不同项目多次复制粘贴的麻烦，这里统一封装，并发布到 npm，以提高开发效率。
+To avoid the trouble of copying and pasting many times for different projects, the common functions in the business development process are encapsulated here and released to npm to improve development efficiency.
 
 ### Install
 
@@ -25,7 +25,9 @@ yarn add common-screw
 
 ```
 
-### 按需加载 默认支持基于 ES Modules 的 Tree Shaking
+### Demand Loading
+
+> Default support for ES Modules-based Tree Shaking
 
 ```js
 import { randomBoolean, isArray, addDaysToDate } from "common-screw"
@@ -36,7 +38,7 @@ isArray([1, 2]) // true
 addDaysToDate("2020-10-15", -10) // 2020-10-05
 ```
 
-### 模块加载
+### Module loading
 
 ```js
 import {
@@ -54,106 +56,106 @@ CSDate.addDaysToDate("2021-10-15", -10) // 2021-10-05
 CSRandom.randomBoolean() // false
 ```
 
-## :package: API 文档
+## :package: API Documentation
 
-### CSBrowser 浏览器类方法
+### CSBrowser (Browser Class Methods)
 
-#### &emsp;&emsp;[copyToClipboard](https://github.com/giseles/common-screw/blob/main/src/browser/copyToClipboard.ts) &emsp;&emsp;&emsp;复制到粘贴板
+#### &emsp;&emsp;[copyToClipboard](https://github.com/giseles/common-screw/blob/main/src/browser/copyToClipboard.ts) &emsp;&emsp;&emsp;Copy to clipboard
 
-#### &emsp;&emsp;[getUrlParam](https://github.com/giseles/common-screw/blob/main/src/browser/getUrlParam.ts) &emsp;&emsp;&emsp;获取 url 参数
+#### &emsp;&emsp;[getUrlParam](https://github.com/giseles/common-screw/blob/main/src/browser/getUrlParam.ts) &emsp;&emsp;&emsp;Get the parameters of the URL
 
-#### &emsp;&emsp;[isBrowser](https://github.com/giseles/common-screw/blob/main/src/browser/isBrowser.ts) &emsp;&emsp;&emsp;检查是否为浏览器环境
+#### &emsp;&emsp;[isBrowser](https://github.com/giseles/common-screw/blob/main/src/browser/isBrowser.ts) &emsp;&emsp;&emsp;Check is browser environment
 
-#### &emsp;&emsp;[toUrlEncode](https://github.com/giseles/common-screw/blob/main/src/browser/toUrlEncode.ts) &emsp;&emsp;&emsp;对象转 url 参数
+#### &emsp;&emsp;[toUrlEncode](https://github.com/giseles/common-screw/blob/main/src/browser/toUrlEncode.ts) &emsp;&emsp;&emsp;Object to URL parameter
 
-#### &emsp;&emsp;[url](https://github.com/giseles/common-screw/blob/main/src/browser/url.ts) &emsp;&emsp;&emsp;操作 URL
+#### &emsp;&emsp;[url](https://github.com/giseles/common-screw/blob/main/src/browser/url.ts) &emsp;&emsp;&emsp;Operation URL
 
-### CSDate 日期类方法
+### CSDate (Date Class Methods)
 
-#### &emsp;&emsp;[addDaysToDate](https://github.com/giseles/common-screw/blob/main/src/date/addDaysToDate.ts) &emsp;&emsp;&emsp;日期加前后天数
+#### &emsp;&emsp;[addDaysToDate](https://github.com/giseles/common-screw/blob/main/src/date/addDaysToDate.ts) &emsp;&emsp;&emsp;Date plus days before and after
 
-#### &emsp;&emsp;[addMinutesToDate](https://github.com/giseles/common-screw/blob/main/src/date/addMinutesToDate.ts) &emsp;&emsp;&emsp;加前后分钟数
+#### &emsp;&emsp;[addMinutesToDate](https://github.com/giseles/common-screw/blob/main/src/date/addMinutesToDate.ts) &emsp;&emsp;&emsp;Minutes before and after addition
 
-#### &emsp;&emsp;[dateToTimestamp](https://github.com/giseles/common-screw/blob/main/src/date/dateToTimestamp.ts) &emsp;&emsp;&emsp;日期转时间戳
+#### &emsp;&emsp;[dateToTimestamp](https://github.com/giseles/common-screw/blob/main/src/date/dateToTimestamp.ts) &emsp;&emsp;&emsp;Date to Timestamp
 
-#### &emsp;&emsp;[diffTime](https://github.com/giseles/common-screw/blob/main/src/date/diffTime.ts) &emsp;&emsp;&emsp;日期间隔时间
+#### &emsp;&emsp;[diffTime](https://github.com/giseles/common-screw/blob/main/src/date/diffTime.ts) &emsp;&emsp;&emsp;Date interval
 
-#### &emsp;&emsp;[formatDate](https://github.com/giseles/common-screw/blob/main/src/date/formatDate.ts) &emsp;&emsp;&emsp;格式化时间
+#### &emsp;&emsp;[formatDate](https://github.com/giseles/common-screw/blob/main/src/date/formatDate.ts) &emsp;&emsp;&emsp;Format date
 
-#### &emsp;&emsp;[getNow](https://github.com/giseles/common-screw/blob/main/src/date/getNow.ts) &emsp;&emsp;&emsp;获取当前时间
+#### &emsp;&emsp;[getNow](https://github.com/giseles/common-screw/blob/main/src/date/getNow.ts) &emsp;&emsp;&emsp;Get current date
 
-#### &emsp;&emsp;[timestampToDate](https://github.com/giseles/common-screw/blob/main/src/date/timestampToDate.ts) &emsp;&emsp;&emsp;时间戳转日期
+#### &emsp;&emsp;[timestampToDate](https://github.com/giseles/common-screw/blob/main/src/date/timestampToDate.ts) &emsp;&emsp;&emsp;Timestamp to Date
 
-#### &emsp;&emsp;[timestampToDateNoTime](https://github.com/giseles/common-screw/blob/main/src/date/timestampToDateNoTime.ts) &emsp;&emsp;&emsp;时间戳转日期   无时间  
+#### &emsp;&emsp;[timestampToDateNoTime](https://github.com/giseles/common-screw/blob/main/src/date/timestampToDateNoTime.ts) &emsp;&emsp;&emsp;Timestamp to Date And noTime  
 
-### CSDevice 设备类方法
+### CSDevice (Device Class Methods)
 
-#### &emsp;&emsp;[getOS](https://github.com/giseles/common-screw/blob/main/src/device/getOS.ts) &emsp;&emsp;&emsp;操作系统类型
+#### &emsp;&emsp;[getOS](https://github.com/giseles/common-screw/blob/main/src/device/getOS.ts) &emsp;&emsp;&emsp;Operating system type
 
-#### &emsp;&emsp;[isMobile](https://github.com/giseles/common-screw/blob/main/src/device/isMobile.ts) &emsp;&emsp;&emsp;是否是移动端
+#### &emsp;&emsp;[isMobile](https://github.com/giseles/common-screw/blob/main/src/device/isMobile.ts) &emsp;&emsp;&emsp;Is mobile
 
-#### &emsp;&emsp;[isSupportCamera](https://github.com/giseles/common-screw/blob/main/src/device/isSupportCamera.ts) &emsp;&emsp;&emsp;是否支持摄像头
+#### &emsp;&emsp;[isSupportCamera](https://github.com/giseles/common-screw/blob/main/src/device/isSupportCamera.ts) &emsp;&emsp;&emsp;Whether to support the camera
 
-#### &emsp;&emsp;[isWeiXin](https://github.com/giseles/common-screw/blob/main/src/device/isWeiXin.ts) &emsp;&emsp;&emsp;是否是微信
+#### &emsp;&emsp;[isWeiXin](https://github.com/giseles/common-screw/blob/main/src/device/isWeiXin.ts) &emsp;&emsp;&emsp;Is WeChat
 
-### CSDown 下载类方法
+### CSDown (Down Class Methods)
 
-#### &emsp;&emsp;[downToCsv](https://github.com/giseles/common-screw/blob/main/src/down/downToCsv.ts) &emsp;&emsp;&emsp;下载 csv 文件
+#### &emsp;&emsp;[downToCsv](https://github.com/giseles/common-screw/blob/main/src/down/downToCsv.ts) &emsp;&emsp;&emsp;Download csv
 
-#### &emsp;&emsp;[downToXlsx](https://github.com/giseles/common-screw/blob/main/src/down/downToXlsx.ts) &emsp;&emsp;&emsp;下载 xlsx 文件
+#### &emsp;&emsp;[downToXlsx](https://github.com/giseles/common-screw/blob/main/src/down/downToXlsx.ts) &emsp;&emsp;&emsp;Download xlsx
 
-#### &emsp;&emsp;[downUrl](https://github.com/giseles/common-screw/blob/main/src/down/downUrl.ts) &emsp;&emsp;&emsp;通过 url 下载文件
+#### &emsp;&emsp;[downUrl](https://github.com/giseles/common-screw/blob/main/src/down/downUrl.ts) &emsp;&emsp;&emsp;Download file from URL
 
-### CSFormat 格式类方法
+### CSFormat (Format Class Methods)
 
-#### &emsp;&emsp;[addUnit](https://github.com/giseles/common-screw/blob/main/src/format/addUnit.ts) &emsp;&emsp;&emsp;数字后加单位
+#### &emsp;&emsp;[addUnit](https://github.com/giseles/common-screw/blob/main/src/format/addUnit.ts) &emsp;&emsp;&emsp;Add unit after the number
 
-#### &emsp;&emsp;[getObjKey](https://github.com/giseles/common-screw/blob/main/src/format/getObjKey.ts) &emsp;&emsp;&emsp;获取对象属性
+#### &emsp;&emsp;[getObjKey](https://github.com/giseles/common-screw/blob/main/src/format/getObjKey.ts) &emsp;&emsp;&emsp;Get object properties
 
-#### &emsp;&emsp;[toEnum](https://github.com/giseles/common-screw/blob/main/src/format/toEnum.ts) &emsp;&emsp;&emsp;将数组  =>  对象格式
+#### &emsp;&emsp;[toEnum](https://github.com/giseles/common-screw/blob/main/src/format/toEnum.ts) &emsp;&emsp;&emsp;Array => Object
 
-#### &emsp;&emsp;[toEnumArray](https://github.com/giseles/common-screw/blob/main/src/format/toEnumArray.ts) &emsp;&emsp;&emsp;将对象  =>  数组格式
+#### &emsp;&emsp;[toEnumArray](https://github.com/giseles/common-screw/blob/main/src/format/toEnumArray.ts) &emsp;&emsp;&emsp;Objects => Array
 
-#### &emsp;&emsp;[toFixed](https://github.com/giseles/common-screw/blob/main/src/format/toFixed.ts) &emsp;&emsp;&emsp;保留小数点（非四舍五入）
+#### &emsp;&emsp;[toFixed](https://github.com/giseles/common-screw/blob/main/src/format/toFixed.ts) &emsp;&emsp;&emsp;Retain decimal points (not rounded)
 
-#### &emsp;&emsp;[toString](https://github.com/giseles/common-screw/blob/main/src/format/toString.ts) &emsp;&emsp;&emsp;字符串转换
+#### &emsp;&emsp;[toString](https://github.com/giseles/common-screw/blob/main/src/format/toString.ts) &emsp;&emsp;&emsp;String conversion
 
-### CSFunction 常用函数类方法
+### CSFunction (Function Class Methods)
 
-#### &emsp;&emsp;[debounce](https://github.com/giseles/common-screw/blob/main/src/function/debounce.ts) &emsp;&emsp;&emsp;防抖
+#### &emsp;&emsp;[debounce](https://github.com/giseles/common-screw/blob/main/src/function/debounce.ts) &emsp;&emsp;&emsp;Debounce
 
-#### &emsp;&emsp;[deepClone](https://github.com/giseles/common-screw/blob/main/src/function/deepClone.ts) &emsp;&emsp;&emsp;深拷贝
+#### &emsp;&emsp;[deepClone](https://github.com/giseles/common-screw/blob/main/src/function/deepClone.ts) &emsp;&emsp;&emsp;DeepClone
 
-#### &emsp;&emsp;[throttle](https://github.com/giseles/common-screw/blob/main/src/function/throttle.ts) &emsp;&emsp;&emsp;节流
+#### &emsp;&emsp;[throttle](https://github.com/giseles/common-screw/blob/main/src/function/throttle.ts) &emsp;&emsp;&emsp;Throttle
 
-### CSLang 语法类方法
+### CSLang (Lang Class Methods)
 
-#### &emsp;&emsp;[common](https://github.com/giseles/common-screw/blob/main/src/lang/common.ts) &emsp;&emsp;&emsp;常见格式判断
+#### &emsp;&emsp;[common](https://github.com/giseles/common-screw/blob/main/src/lang/common.ts) &emsp;&emsp;&emsp;Common format judgments
 
-#### &emsp;&emsp;[isNil](https://github.com/giseles/common-screw/blob/main/src/lang/isNil.ts) &emsp;&emsp;&emsp;判断类型-是否为空
+#### &emsp;&emsp;[isNil](https://github.com/giseles/common-screw/blob/main/src/lang/isNil.ts) &emsp;&emsp;&emsp;Determine the type - is empty
 
-### CSProject 项目常用类方法
+### CSProject (Project Class Methods)
 
-#### &emsp;&emsp;[toMenuData](https://github.com/giseles/common-screw/blob/main/src/project/toMenuData.ts) &emsp;&emsp;&emsp;将菜单数据格式化
+#### &emsp;&emsp;[toMenuData](https://github.com/giseles/common-screw/blob/main/src/project/toMenuData.ts) &emsp;&emsp;&emsp;Format the menu data
 
-### CSRandom 随机类方法
+### CSRandom (Random Class Methods)
 
-#### &emsp;&emsp;[randomBoolean](https://github.com/giseles/common-screw/blob/main/src/random/randomBoolean.ts) &emsp;&emsp;&emsp;随机生成 Boolean
+#### &emsp;&emsp;[randomBoolean](https://github.com/giseles/common-screw/blob/main/src/random/randomBoolean.ts) &emsp;&emsp;&emsp;Random Generation Boolean
 
-#### &emsp;&emsp;[randomNum](https://github.com/giseles/common-screw/blob/main/src/random/randomNum.ts) &emsp;&emsp;&emsp;生成指定范围[min, max]的随机数
+#### &emsp;&emsp;[randomNum](https://github.com/giseles/common-screw/blob/main/src/random/randomNum.ts) &emsp;&emsp;&emsp;Generate a random number in the specified range [min, max].
 
-### CSRegexp 正则类方法
+### CSRegexp (Regexp Class Methods)
 
-#### &emsp;&emsp;[regList](https://github.com/giseles/common-screw/blob/main/src/regexp/regList.ts) &emsp;&emsp;&emsp;常见格式规则
+#### &emsp;&emsp;[regList](https://github.com/giseles/common-screw/blob/main/src/regexp/regList.ts) &emsp;&emsp;&emsp;Common format rules
 
-#### &emsp;&emsp;[toRule](https://github.com/giseles/common-screw/blob/main/src/regexp/toRule.ts) &emsp;&emsp;&emsp;判断是否为指定格式
+#### &emsp;&emsp;[toRule](https://github.com/giseles/common-screw/blob/main/src/regexp/toRule.ts) &emsp;&emsp;&emsp;Determines if the format is specified
 
-### CSStorage 存储类方法
+### CSStorage (Storage Class Methods)
 
-#### &emsp;&emsp;[storage](https://github.com/giseles/common-screw/blob/main/src/storage/storage.ts) &emsp;&emsp;&emsp;改造 localStorage,可设置过期时间
+#### &emsp;&emsp;[storage](https://github.com/giseles/common-screw/blob/main/src/storage/storage.ts) &emsp;&emsp;&emsp;Modify localStorage,set expiration time
 
-### CSString 字符串类方法
+### CSString (String Class Methods)
 
-#### &emsp;&emsp;[getEscapeString](https://github.com/giseles/common-screw/blob/main/src/string/getEscapeString.ts) &emsp;&emsp;&emsp;字符串的转义
+#### &emsp;&emsp;[getEscapeString](https://github.com/giseles/common-screw/blob/main/src/string/getEscapeString.ts) &emsp;&emsp;&emsp;Escape of strings
 
-#### &emsp;&emsp;[getUnEscapeString](https://github.com/giseles/common-screw/blob/main/src/string/getUnEscapeString.ts) &emsp;&emsp;&emsp;字符串的反转义
+#### &emsp;&emsp;[getUnEscapeString](https://github.com/giseles/common-screw/blob/main/src/string/getUnEscapeString.ts) &emsp;&emsp;&emsp;Unescape of strings
