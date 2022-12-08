@@ -40,7 +40,7 @@ export const toMenuData = (data: any, configList: any = baseConfig) => {
               }
             )
             breadcrumbList[path] = {
-              name: item.name,
+              name: item[configList.name],
               icon: item.number
             }
           } else res[key] = value
