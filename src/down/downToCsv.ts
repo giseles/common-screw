@@ -11,9 +11,8 @@ import downDate from "../_utils/downDate"
 export const downToCsv = (data: any, name: string, time: boolean = true) => {
   let fileName = time ? name + " " + downDate() : name
   const blob = new Blob(["\ufeff" + data], { type: "text/csv" })
-  // @ts-ignore
+  const navigator: any = window.navigator
   if (navigator.msSaveBlob) {
-    // @ts-ignore
     navigator.msSaveBlob(blob, fileName)
   } else {
     const a = document.createElement("a")

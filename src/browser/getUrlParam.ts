@@ -1,4 +1,4 @@
-import { LooseObject } from "../_interface"
+import { LooseObject } from "../index"
 
 /**
  * @name 获取url参数

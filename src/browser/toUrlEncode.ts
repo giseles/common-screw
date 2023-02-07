@@ -1,4 +1,4 @@
-import { LooseObject } from "../_interface"
+import { LooseObject } from "../index"
 
 /**
  * @name 对象转url参数

@@ -1,7 +1,7 @@
 import isType from "../_utils/isType"
 /**
  * @name 字符串转换
- * @param {Any} value 值
+ * @param {unknown} value 值
  * @example
  * toString(23.3)        ----  '23.3'
  * toString(null)        ----  ''

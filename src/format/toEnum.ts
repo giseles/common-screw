@@ -1,9 +1,9 @@
-import { LooseObject } from "../_interface"
+import { LooseObject } from "../index"
 /**
  * @name 将数组 => 对象格式
  * @param {Any} data 枚举
- * @param {Any} id 属性名 = 'id'
- * @param {Any} value 属性值名 = 'value'
+ * @param {string} id 属性名 = 'id'
+ * @param {string} value 属性值名 = 'value'
  * @example
  * toEnum([{id: "1",value: aa}])   ----  {1:aa}
  * toEnum({})      ----  []
@@ -12,8 +12,8 @@ import { LooseObject } from "../_interface"
  */
 export const toEnum = (
   data: any = [],
-  id: any = "id",
-  value: any = "value"
+  id: string = "id",
+  value: string = "value"
 ) => {
   let res: LooseObject = {},
     len = data.length

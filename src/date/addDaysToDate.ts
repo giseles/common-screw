@@ -8,8 +8,8 @@
  *  addDaysToDate('2020-10-15', 10)   ---- 2020-10-25
  *  addDaysToDate('2020-10-15', -10)  ---- 2020-10-05
  */
-export const addDaysToDate = (date: string = "", n: number = 0) => {
-  const d = date === "" ? new Date() : new Date(date)
+export const addDaysToDate = (date?: string, n: number = 0) => {
+  const d = date ? new Date(date) : new Date()
   d.setDate(d.getDate() + n)
   return d.toISOString().split("T")[0]
 }

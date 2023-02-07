@@ -7,7 +7,7 @@ const isEmptyObject = (obj: any): boolean => {
 
 /**
  * @name 判断类型-是否为空
- * @param {Any} o 传入值
+ * @param {Unknown} o 传入值
  * @description  '',null,undefined,{},[]
  * @example
  *
@@ -20,5 +20,5 @@ const isEmptyObject = (obj: any): boolean => {
  *  isNil([12,3])        ---- false
  *
  */
-export const isNil = (o: any): boolean =>
+export const isNil = (o: unknown): boolean =>
   o === null || o === undefined || o === "" || isEmptyObject(o)

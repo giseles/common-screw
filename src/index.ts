@@ -1,4 +1,3 @@
-export * from "./_interface" // 接口
 export * from "./browser" // 浏览器
 export * from "./date" // 日期
 export * from "./device" // 设备
@@ -11,3 +10,4 @@ export * from "./random" // 随机
 export * from "./regexp" // 正则
 export * from "./storage" // 存储
 export * from "./string" // 字符串
+export * from "./tsType" // TS type

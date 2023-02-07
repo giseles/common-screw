@@ -1,3 +1,5 @@
+import { LooseObject } from "../index"
+
 /**
  * @name 将菜单数据格式化
  * @param {Array} data 原始菜单
@@ -6,7 +8,7 @@
  *  toMenuData(data)
  *  toMenuData(data,configList)
  */
-export const toMenuData = (data: any, configList: any = baseConfig) => {
+export const toMenuData = (data: any, configList: LooseObject = baseConfig) => {
   const configKeys: any = Object.keys(configList)
   let pathHasPermissionList: any = {} // 路由所拥有功能权限
   let breadcrumbList: any = {} // 面包屑数据

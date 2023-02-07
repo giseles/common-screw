@@ -1,5 +1,4 @@
-import { REG_LIST } from "../regList"
-import { toRule } from "../toRule"
+import { REG_LIST, toRule } from "../index"
 
 test("判断是否为用户名", () => {
   expect(toRule(REG_LIST.account.pattern, "admin")).toBe(true)

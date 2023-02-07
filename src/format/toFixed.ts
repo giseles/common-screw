@@ -1,7 +1,7 @@
 /**
  * @name 保留小数点（非四舍五入）
  * @param {Any} n 数字
- * @param {Any} fixed 位数 = 2
+ * @param {number} fixed 位数 = 2
  * @example
  * toFixed(11.3632)         ----  11.36
  * toFixed(11.363222,4)     ----  11.3632

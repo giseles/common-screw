@@ -1,4 +1,4 @@
-import { itemObj } from "../_interface"
+import { itemObj } from "../index"
 
 /**
  * @name 改造localStorage,可设置过期时间
@@ -11,7 +11,7 @@ import { itemObj } from "../_interface"
  *  storage.removeItem(key)
  */
 export const storage = {
-  setItem: (key: string, value: any, expire = 7 * 24 * 60 * 60) => {
+  setItem: (key: string, value: unknown, expire: number = 7 * 24 * 60 * 60) => {
     localStorage.setItem(
       key,
       JSON.stringify({ data: value, expire: +new Date() + expire * 1000 })
