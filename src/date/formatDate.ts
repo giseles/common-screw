@@ -7,7 +7,7 @@ import { timestampToDate, timestampToDateNoTime } from "./index"
  * @returns {Date} 日期+时间
  * @example formatDate(1622711246300,'yyyy-MM-dd HH:mm:ss')  ---- 2021-06-03 17:06:29
  */
-export const formatDate = (timestamp?: any, format?: string) => {
+export const formatDate = (timestamp?: number, format?: string) => {
   if (!timestamp) {
     return "-"
   } else if (!format) {

@@ -25,8 +25,8 @@ export const isBoolean = isType("Boolean")
  * @name 判断类型-对象
  * @param {Any} value 传入值
  * @example
- *  isObject(11)     ---- false
  *  isObject({})     ---- true
+ *  isObject(11)     ---- false
  */
 export const isObject = (value: unknown) =>
   value !== null && typeof value === "object"
@@ -35,8 +35,8 @@ export const isObject = (value: unknown) =>
  * @name 判断类型-函数
  * @param {Any} value 传入值
  * @example
- *  isFunction(11)         ---- false
  *  isFunction(()=>{})     ---- true
+ *  isFunction(11)         ---- false
  */
 export const isFunction = (value: unknown) => typeof value === "function"
 
@@ -44,8 +44,8 @@ export const isFunction = (value: unknown) => typeof value === "function"
  * @name 判断类型-字符串
  * @param {Any} value 传入值
  * @example
- *  isString(11)         ---- false
  *  isString('11')       ---- true
+ *  isString(11)         ---- false
  */
 export const isString = (value: unknown) => typeof value === "string"
 
@@ -62,7 +62,7 @@ export const isNumber = (value: unknown) => typeof value === "number"
  * @name 判断类型-undefined
  * @param {Any} value 传入值
  * @example
- *  isNumber(undefined)    ---- true
- *  isNumber('11')         ---- false
+ *  isUndefined(undefined)    ---- true
+ *  isUndefined('11')         ---- false
  */
 export const isUndefined = (value: unknown) => typeof value === "undefined"

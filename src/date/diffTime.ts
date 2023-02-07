@@ -1,13 +1,17 @@
 /**
  * @name 日期间隔时间
- * @param {Any} startDate  日期1
- * @param {Any} endDate    日期2
+ * @param {String} startDate  日期1
+ * @param {String} endDate    日期2
  * @param {Boolean} typeArray    是否转为数组 = false
  * @example
  *  diffTime('2020-10-15', '2020-10-26 12:00')           ---- 11天12小时
  *  diffTime('2020-10-26', '2020-10-29 12:22:33', true)  ---- [3, 12, 22]
  */
-export const diffTime = (startDate: any, endDate: any, typeArray = false) => {
+export const diffTime = (
+  startDate: String,
+  endDate: String,
+  typeArray = false
+) => {
   const diff =
     Date.parse(endDate.replace(/-/g, "/")) -
     Date.parse(startDate.replace(/-/g, "/"))

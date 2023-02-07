@@ -8,7 +8,7 @@ import addZero from "../_utils/addZero"
  *  timestampToDate()              ---- 2021-06-03 17:06:29
  *  timestampToDate(1622711246300) ---- 2021-06-03 17:07:26
  */
-export const timestampToDate = (timestamp = +new Date()) => {
+export const timestampToDate = (timestamp: number = +new Date()) => {
   const time = new Date(timestamp)
   const y = time.getFullYear()
   const M = time.getMonth() + 1
