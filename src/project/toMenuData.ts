@@ -1,4 +1,4 @@
-import { LooseObject } from "../index"
+// @ts-nocheck
 
 /**
  * @name 将菜单数据格式化
@@ -8,76 +8,63 @@ import { LooseObject } from "../index"
  *  toMenuData(data)
  *  toMenuData(data,configList)
  */
-export const toMenuData = (data: any, configList: LooseObject = baseConfig) => {
-  const configKeys: any = Object.keys(configList)
-  let pathHasPermissionList: any = {} // 路由所拥有功能权限
-  let breadcrumbList: any = {} // 面包屑数据
-  let ablePathList: any = [] // 可访问页面
+export const toMenuData = (data, configList: LooseObject = baseConfig) => {
+  let pathList = {} // 每个path的数据
+  let fistPath = "" // 第一个有效路由
 
-  const toMenu = (
-    data: any,
-    config: any = configList,
-    keys: any = configKeys
-  ) =>
-    data.map((item: any) => {
-      return keys.reduce((res: any, key: any) => {
+  const toMenu = (data, config = configList) => {
+    const arr = [] // 菜单数据
+    const { name, enName, icon, children, isHide } = config
+
+    data?.forEach((_) => {
+      const res = {}
+      const isShow = !isHide(_)
+      Object.keys(config).forEach((key) => {
         const realKey = config[key]
-        let value =
-          typeof realKey === "function" ? realKey(item) : item[realKey]
+        let value = isString(realKey) ? _[realKey] : realKey(_)
 
-        if (!!value || typeof value === "boolean") {
-          if (key === "path") {
-            !ablePathList.includes(value) && ablePathList.push(value)
+        if (key === "path" && value) {
+          if (!fistPath && isShow) {
+            fistPath = value
           }
-          if (key === "children") {
-            res[key] = toMenu(value.filter(({ url }: any) => Boolean(url)))
+          const perm = []
+          _[children]?.forEach(
+            (item) => item[enName] && perm.push(item[enName])
+          )
 
-            let urls: any = {}
-            const path = item[config["path"]]
-            const permissions = value.filter(({ url, isMenu }: any) => !isMenu)
-            pathHasPermissionList[path] = permissions.map(
-              ({ enName, url }: any) => {
-                urls[enName] = url
-                return enName
-              }
-            )
-            breadcrumbList[path] = {
-              name: item[configList.name],
-              icon: item.number
-            }
-          } else res[key] = value
+          pathList[value] = {
+            perm,
+            name: _[name],
+            enName: _[enName],
+            icon: _[icon]
+          }
         }
-        return res
-      }, {})
-    })
 
-  const getFistPath = (menu: any) => {
-    let path = "/"
-    for (let i = 0; i < menu.length; i++) {
-      const item = menu[i]
-      if (item.path) {
-        path = item.path
-        break
-      }
-    }
-    return path
+        if (key === "children") {
+          res[key] = toMenu(value)
+        } else if (key !== "isHide") {
+          res[key] = value
+        }
+      })
+      isShow && arr.push(res)
+    })
+    return arr
   }
 
   const menuList = toMenu(data)
   return {
     menuList, // 菜单数据
-    pathHasPermissionList, // 路由所拥有功能权限
-    breadcrumbList, // 面包屑数据
-    ablePathList, // 可访问页面
-    fistPath: getFistPath(menuList) // 第一个有效路由
+    pathList, // 所有path的数据
+    fistPath // 第一个有效路由
   }
 }
 
 // 菜单格式化 默认映射配置
-const baseConfig: any = {
+const baseConfig = {
   name: "name",
-  icon: "number",
-  path: "url",
+  enName: "enName",
+  icon: "icon",
+  path: "path",
   children: "children",
-  isHide: ({ url, isMenu }: any) => Boolean(url && !isMenu)
+  isHide: ({ url, isMenu }) => Boolean(url && !isMenu)
 }
