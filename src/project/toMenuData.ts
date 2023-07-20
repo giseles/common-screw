@@ -1,5 +1,6 @@
 // @ts-nocheck
 
+import { LooseObject } from "../index"
 /**
  * @name 将菜单数据格式化
  * @param {Array} data 原始菜单
